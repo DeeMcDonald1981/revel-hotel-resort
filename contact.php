@@ -18,12 +18,31 @@ include('inc/header.php')?>
             </div>
             <div class="form_group">
                 <label for="">Name</label>
-                <textarea name="mesage" id="" cols="30" rows="10"></textarea>
+                <textarea name="mesage" id="" cols="30" rows="20"></textarea>
             </div>
             <input type="submit" name="submit" value="Message Us">
         </form>
     </div>
 </section>
 
+<section id="contact_info" class="clearfix">
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3> Location</h3>
+            <p>891 Layman Court, Atlanta GA 30328</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Phone Number</h3>
+            <p>(678)-322-5600</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email Address</h3>
+            <p>dsrdan.radojci@myvaultsophia.com</p>
+        </div>
+    </div>
+</section>
 
 <?php include('inc/footer.php')?>
