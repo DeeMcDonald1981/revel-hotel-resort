@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+html, body {
+  line-height: 1.7em; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.text_primary {
+  color: #9055A2; }
+
+.lead {
+  font-size: 20px; }
+
+.btn {
+  background: #000;
+  color: #ffffff;
+  padding: 24px 18px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  transition: 0.5s; }
+
+.btn:hover {
+  background: #9055A2; }
+
+.btn_light {
+  background: #fff;
+  color: #333;
+  padding: 24px 18px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  transition: 0.5s; }
+
+.btn_light:hover {
+  background: #9055A2;
+  color: #ffffff; }
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+#navbar {
+  background: #9055A2; }
+
+#navbar a {
+  color: #ffffff; }
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px; }
+
+#navbar ul {
+  float: right; }
+
+#navbar ul li {
+  list-style: none;
+  float: left; }
+
+#navbar ul li a {
+  text-transform: uppercase;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  transition: .7s; }
+
+#navbar ul li a:hover, #navbar ul li a.current {
+  background: #444444;
+  color: #ae7fbc; }
+
+#showcase {
+  background: linear-gradient(to right bottom, rgba(212, 153, 185, 0.8), rgba(253, 214, 146, 0.8)), url(../img/the-palm-962785_960_720.jpg) center center no-repeat;
+  background-size: cover;
+  height: 600px; }
+
+#showcase .showcase_content {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 180px; }
+
+#showcase .showcase_content h1 {
+  line-height: 1.2em;
+  font-size: 60px;
+  text-transform: capitalize; }
+
+#showcase .showcase_content p {
+  padding-bottom: 20px;
+  line-height: 1.7em; }
+
+h1, h2, h3 {
+  padding-bottom: 20px; }
+
+p {
+  margin: 10px 0; }
+
+#home_info {
+  overflow: hidden;
+  height: 400px; }
+
+#home_info .info_img {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 400px;
+  float: right;
+  width: 50%;
+  transition: 0.7s;
+  cursor: pointer; }
+
+#home_info .info_img:hover {
+  transform: scale(1.1, 1.1); }
+
+#home_info .info_img img {
+  width: 100%; }
+
+#home_info .info_content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 20px 20px 20px;
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  height: 100%;
+  background: #333;
+  color: #ffffff; }
+
+#home_info .info_content h2 {
+  text-transform: uppercase; }
+
+/* home_info */
+#features .box {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  padding: 50px; }
+
+#features .box:nth-of-type(2) {
+  background: #9055A2;
+  color: #ffffff; }
+
+#features .box i {
+  margin-bottom: 10px; }
+
+#main_footer {
+  text-align: center;
+  background: #444444;
+  color: #ffffff;
+  padding: 20px; }
+
+#about_info {
+  line-height: 2.1rem;
+  margin-top: 60px;
+  min-height: 400px; }
+
+#about_info .info_left {
+  float: left;
+  width: 50%; }
+
+#about_info .info_right {
+  float: right;
+  width: 50%; }
+
+#about_info .info_right img {
+  display: block;
+  position: relative;
+  bottom: 25px;
+  left: 150px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%; }
+
+.l-heading {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800; }
+
+#testimonials {
+  padding: 60px;
+  margin-bottom: 60px;
+  background: linear-gradient(to right bottom, rgba(128, 0, 128, 0.5), rgba(255, 166, 0, 0.5)), url(../img/hotel_lobby.jpg) center center no-repeat;
+  background-size: cover; }
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #333;
+  color: #ffffff;
+  overflow: hidden;
+  opacity: 0.9; }
+
+#testimonials .testimonial .img_container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left; }
+
+#testimonials .testimonial img {
+  width: 100%;
+  display: block;
+  margin-right: 5px; }
+
+#testimonials .testimonial p {
+  float: right;
+  width: 89%; }
+
+#contact_form {
+  margin: 60px 0; }
+
+#contact_form .l-heading {
+  color: #000000;
+  text-align: left; }
+
+#contact_form form [type='text'], #contact_form form [type='email'], #contact_form form textarea {
+  width: 100%;
+  border: 3px solid #ccc;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  transition: 0.7s;
+  outline: none;
+  cursor: pointer; }
+
+#contact_form form [type='text']:active, #contact_form form [type='email']:active, #contact_form form textarea:active {
+  border: 3px solid #9055A2; }
+
+#contact_form form [type='text']:hover, #contact_form form [type='email']:hover, #contact_form form textarea:hover {
+  background: rgba(204, 204, 204, 0.589); }
+
+#contact_form [type="submit"] {
+  display: block;
+  background: #9055A2;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.7s; }
+
+#contact_form [type="submit"]:hover {
+  background: #ae7fbc; }
