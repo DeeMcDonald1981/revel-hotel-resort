@@ -13,7 +13,7 @@ include('inc/header.php');
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae ex quod ad sit praesentium doloribus mollitia. Dolorum quibusdam corporis nemo impedit non eius distinctio animi, expedita, qui at quisquam doloremque. Perferendis, architecto possimus nihil illum error illo magnam doloremque.</p>
 				<a href="about.php" class="btn_light">Read More</a>
 			</div>
-		</section>
+	</section>
 		
 		<section id="features" class="clearfix">
 			<div class="box">

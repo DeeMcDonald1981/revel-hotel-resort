@@ -100,6 +100,18 @@ a {
   #navbar h1 {
     font-size: 1rem; } }
 
+#navbar .nav_icon {
+  display: none;
+  float: right;
+  cursor: pointer; }
+
+#navbar .nav_icon .navbar {
+  border-bottom: 2px solid #fff;
+  height: 7px;
+  width: 22px;
+  position: relative;
+  top: 20px; }
+
 #navbar ul {
   float: right; }
 
@@ -120,14 +132,39 @@ a {
 
 @media screen and (max-width: 420px) {
   #navbar ul {
-    display: none;
-    float: left; }
+    position: fixed;
+    top: 0;
+    left: -150px;
+    float: left;
+    background: #9055A2;
+    height: 100%;
+    z-index: 99;
+    transition: 0.7s; }
   #navbar ul li {
-    float: none; } }
+    float: none; }
+  #navbar .nav_icon {
+    display: block; }
+  #navbar .side_nav {
+    transition: 0.7s;
+    left: 0; } }
 
 @media screen and (min-width: 420px) and (max-width: 768px) {
   #navbar ul {
-    display: none; } }
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: -150px;
+    float: left;
+    background: #9055A2;
+    height: 100%;
+    z-index: 99;
+    transition: 0.7s; }
+  #navbar ul li {
+    width: 100%; }
+  #navbar .nav_icon {
+    display: block; }
+  #navbar .side_nav {
+    left: 0; } }
 
 #showcase {
   background: linear-gradient(to right bottom, rgba(212, 153, 185, 0.8), rgba(253, 214, 146, 0.8)), url(../img/the-palm-962785_960_720.jpg) center center no-repeat;
@@ -201,8 +238,7 @@ p {
   overflow: hidden;
   height: 100%;
   float: right;
-  width: 50%;
-  transition: 0.7s; }
+  width: 50%; }
 
 #home_info .info_img img {
   height: 100%;
@@ -224,6 +260,47 @@ p {
   text-transform: uppercase; }
 
 /* home_info */
+@media screen and (max-width: 420px) {
+  #home_info {
+    overflow: visible; }
+  #home_info .info_img {
+    width: 100%;
+    float: none;
+    height: 250px; }
+  #home_info .info_content {
+    width: 100%;
+    float: none;
+    height: 450px;
+    padding-bottom: 60px;
+    padding: 60px 30px; }
+  #home_info .info_content h2, #home_info .info_content span {
+    font-size: 1rem; }
+  #home_info .info_content p {
+    font-size: 0.8rem; }
+  #home_info .info_content .btn_light {
+    padding: 12px  8px; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #home_info {
+    overflow: visible; }
+  #home_info .info_img {
+    float: none;
+    width: 100%;
+    height: 350px; }
+  #home_info .info_content {
+    float: none;
+    width: 100%;
+    height: 450px;
+    padding-bottom: 60px; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #home_info .info_content h2 {
+    font-size: 1.1rem; }
+  #home_info .info_content p {
+    font-size: 0.8rem; }
+  #home_info .info_content .btn_light {
+    padding: 12px  8px; } }
+
 #features .box {
   width: 33.3%;
   float: left;
@@ -236,6 +313,20 @@ p {
 
 #features .box i {
   margin-bottom: 10px; }
+
+@media screen and (max-width: 420px) {
+  #features .box {
+    width: 100%;
+    float: none; }
+  #features .box:nth-of-type(1) {
+    margin-top: 295px; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #features .box {
+    width: 100%;
+    float: none; }
+  #features .box:nth-of-type(1) {
+    margin-top: 400px; } }
 
 #main_footer {
   text-align: center;

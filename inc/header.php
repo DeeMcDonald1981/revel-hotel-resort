@@ -30,6 +30,11 @@ if($page == 'home'){
 					<a href="index.php">
 						<h1 class="logo">Revel Hotel & Resort</h1>
 					</a>
+					<div class="nav_icon">
+						<div class="navbar"></div>
+						<div class="navbar"></div>
+						<div class="navbar"></div>
+					</div>
 					<ul>
 						<li ><a class="<?php echo $current_home ?>" href="index.php">home</a></li>
 						<li><a a class="<?php echo $current_about ?>" href="about.php">about</a></li>

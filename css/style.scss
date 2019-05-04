@@ -130,46 +130,93 @@ a{
 		}
 	}
 
-    ul{
-        float: right;
-        li{
-            list-style: none;
-            float: left;
-            a{
-                text-transform: uppercase;
-                display: block;
-                padding: 20px;
-                text-align: center;
-                transition: .7s;
-                &:hover, &.current{
-                    background: #444444;
-                    color:$primary-light-color;
-                }
-            }
-        }
+	.nav_icon{
+		display: none;
+		float: right;
+		cursor: pointer;
+		.navbar{
+			border-bottom: 2px solid #fff;
+			height: 7px;
+			width: 22px;
+			position: relative;
+			top: 20px;		
+
+		}
+	}
+
+	ul{
+		float: right;
+		li{
+			list-style: none;
+			float: left;
+			a{
+				text-transform: uppercase;
+				display: block;
+				padding: 20px;
+				text-align: center;
+				transition: .7s;
+				&:hover, &.current{
+					background: #444444;
+					color:$primary-light-color;
+				}
+			}
+		}
 	}
 	
-	@include xsmall(){
-		ul{
-			display: none;
-			float: left;
+	@include xsmall{
+			ul{
+				position: fixed;
+				top: 0;
+				left: -150px;
+				float: left;
+				background: $primary-color;
+				height: 100%;
+				z-index: 99;
+				transition: 0.7s;
+				li{
+					float: none;
 
-			li{
-				float: none;
-
+				}
+			}
+		
+			.nav_icon{
+				display: block;
 			}
 
-			
-		}
+		.side_nav{
+			transition: 0.7s;
+			left: 0;
+		}	
 	}
 
-
-	@include small(){
+	@include small{
 		ul{
-			display: none;
+			width:150px;
+			position: fixed;
+			top: 0;
+			left: -150px;
+			float: left;
+			background: $primary-color;
+			height: 100%;
+			z-index: 99;
+			transition: 0.7s;
+			li{
+				width: 100%;
+			}
 		}
+
+		.nav_icon{
+			display: block;
+		}
+		
+		.side_nav{
+			left: 0;
+		}	
+			
 	}
+
 }
+
 
 #showcase{
 	background: linear-gradient(to right bottom, rgba(212,153,185, 0.8), rgba(253,214,146, 0.8)), url(../img/the-palm-962785_960_720.jpg) center center no-repeat;
@@ -228,6 +275,7 @@ a{
 		}
 	}
 }
+
 @include small(){
 	#showcase{
 		height: 350px;
@@ -274,7 +322,6 @@ p{
 		height: 100%;
 		float: right;
 		width: 50%;
-		transition: 0.7s;
 		
 		img{
 			height: 100%;	
@@ -298,6 +345,75 @@ p{
 	}
 }/* home_info */
 
+
+@include xsmall{
+
+	#home_info{
+		overflow: visible;
+		.info_img{
+			width: 100%;
+			float: none;
+			height: 250px;
+		}
+		.info_content{
+			width: 100%;
+			float: none;
+			height: 450px;
+			padding-bottom: 60px;
+			padding: 60px 30px;
+			h2,span{
+				font-size: 1rem;
+			}
+			p{
+				font-size: 0.8rem;
+			}
+
+			.btn_light{
+				padding: 12px  8px;
+			}
+		}
+	}
+}
+
+@include small{
+	#home_info{
+		overflow: visible;
+		.info_img{
+			float: none;
+			width: 100%;
+			height: 350px;
+		}
+	
+		.info_content{
+			float: none;
+			width: 100%;
+			height: 450px;
+			padding-bottom: 60px;	
+		}
+	}
+}
+
+
+@include medium{
+	#home_info{
+
+		.info_content{
+
+			h2{
+				font-size: 1.1rem;
+			}
+			p{
+				font-size: 0.8rem;
+			}
+
+			.btn_light{
+				padding: 12px  8px;
+			}
+		}
+	}
+	
+}
+
 #features{
 	.box{
 		&:nth-of-type(2){
@@ -315,6 +431,35 @@ p{
 		
 	}
 }
+
+@include xsmall{
+	#features{
+		.box{
+			width: 100%;
+			float: none;
+			&:nth-of-type(1){
+				margin-top: 295px;
+			}
+				
+		}
+
+	}
+}
+
+@include small{
+	#features{
+		.box{
+			width: 100%;
+			float: none;
+			&:nth-of-type(1){
+				margin-top: 400px;
+			}
+				
+		}
+
+	}
+}
+
 
 #main_footer{
 	text-align: center;
@@ -442,3 +587,4 @@ p{
 		text-align: center;
 	}
 }
+
