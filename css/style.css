@@ -28,13 +28,13 @@ html, body {
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
-    width: 100%;
-    padding: 0 30px; } }
+    width: 960px;
+    margin: 0 auto; } }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
-    padding: 0 30px; } }
+    width: 1180px;
+    margin: 0 auto; } }
 
 .text_primary {
   color: #9055A2; }
@@ -101,6 +101,7 @@ a {
     font-size: 1rem; } }
 
 #navbar .nav_icon {
+  outliene: none;
   display: none;
   float: right;
   cursor: pointer; }
