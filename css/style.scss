@@ -1,3 +1,6 @@
+
+@import 'media_queries';
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +16,39 @@ html, body{
     width: 1200px;
     margin: 0 auto;
 }
+@include xsmall{
+	.container{
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+@include small{
+	.container{
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+@include medium{
+	.container{
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+@include large{
+	.container{
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+@include Xlarge{
+	.container{
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+
+
+
 
 $primary-color:#9055A2;
 $primary-light-color:#ae7fbc;
@@ -80,7 +116,19 @@ a{
     h1{
         float: left;
         padding-top: 20px;
-    }
+	}
+	
+	@include xsmall(){
+		h1{
+			font-size: 1rem;
+		}
+	}
+
+	@include small(){
+		h1{
+			font-size: 1rem;
+		}
+	}
 
     ul{
         float: right;
@@ -99,7 +147,28 @@ a{
                 }
             }
         }
-    }
+	}
+	
+	@include xsmall(){
+		ul{
+			display: none;
+			float: left;
+
+			li{
+				float: none;
+
+			}
+
+			
+		}
+	}
+
+
+	@include small(){
+		ul{
+			display: none;
+		}
+	}
 }
 
 #showcase{
@@ -121,8 +190,71 @@ a{
 			padding-bottom: 20px;
 			line-height: 1.7em;
 		}
+
+		.btn{
+			padding: 18px 12px;
+			font-size: .8rem;
+		}
 	}
 }
+
+
+@include xsmall(){
+	#showcase{
+		height: 350px;
+
+		.showcase_content{
+			padding-top: 40px;
+
+			h1{
+				font-size: 2.4rem;
+				position: relative;
+				top: 15px;
+			}
+
+			p{
+				font-size: .8rem;
+				font-weight: bold;
+			}
+
+			.btn{
+				padding: 18px 12px;
+				font-size: .8rem;
+				position: relative;	
+				top: 0px;	
+			}
+	
+			
+		}
+	}
+}
+@include small(){
+	#showcase{
+		height: 350px;
+
+		.showcase_content{
+			padding-top: 40px;
+
+			h1{
+				font-size: 2.4rem;
+			}
+
+			p{
+				font-size: 1rem;
+			}
+
+			.btn{
+				padding: 18px 12px;
+				font-size: .8rem;
+				position: relative;	
+				top: 0px;	
+			}
+			
+		}
+	}
+}
+
+
 
 h1, h2, h3{
     padding-bottom: 20px;
@@ -139,14 +271,13 @@ p{
 		position: relative;
 		z-index: 0;
 		overflow: hidden;
-		height: 400px;
+		height: 100%;
 		float: right;
 		width: 50%;
 		transition: 0.7s;
-		&:hover{
-			transform: scale(1.1, 1.1);
-		}
+		
 		img{
+			height: 100%;	
 			width: 100%;
 		}
 	}

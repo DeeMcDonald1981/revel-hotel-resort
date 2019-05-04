@@ -11,6 +11,31 @@ html, body {
   width: 1200px;
   margin: 0 auto; }
 
+@media screen and (max-width: 420px) {
+  .container {
+    width: 100%;
+    padding: 0 30px; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0 30px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 30px; } }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 30px; } }
+
 .text_primary {
   color: #9055A2; }
 
@@ -67,6 +92,14 @@ a {
   float: left;
   padding-top: 20px; }
 
+@media screen and (max-width: 420px) {
+  #navbar h1 {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #navbar h1 {
+    font-size: 1rem; } }
+
 #navbar ul {
   float: right; }
 
@@ -84,6 +117,17 @@ a {
 #navbar ul li a:hover, #navbar ul li a.current {
   background: #444444;
   color: #ae7fbc; }
+
+@media screen and (max-width: 420px) {
+  #navbar ul {
+    display: none;
+    float: left; }
+  #navbar ul li {
+    float: none; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #navbar ul {
+    display: none; } }
 
 #showcase {
   background: linear-gradient(to right bottom, rgba(212, 153, 185, 0.8), rgba(253, 214, 146, 0.8)), url(../img/the-palm-962785_960_720.jpg) center center no-repeat;
@@ -104,6 +148,43 @@ a {
   padding-bottom: 20px;
   line-height: 1.7em; }
 
+#showcase .showcase_content .btn {
+  padding: 18px 12px;
+  font-size: .8rem; }
+
+@media screen and (max-width: 420px) {
+  #showcase {
+    height: 350px; }
+  #showcase .showcase_content {
+    padding-top: 40px; }
+  #showcase .showcase_content h1 {
+    font-size: 2.4rem;
+    position: relative;
+    top: 15px; }
+  #showcase .showcase_content p {
+    font-size: .8rem;
+    font-weight: bold; }
+  #showcase .showcase_content .btn {
+    padding: 18px 12px;
+    font-size: .8rem;
+    position: relative;
+    top: 0px; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #showcase {
+    height: 350px; }
+  #showcase .showcase_content {
+    padding-top: 40px; }
+  #showcase .showcase_content h1 {
+    font-size: 2.4rem; }
+  #showcase .showcase_content p {
+    font-size: 1rem; }
+  #showcase .showcase_content .btn {
+    padding: 18px 12px;
+    font-size: .8rem;
+    position: relative;
+    top: 0px; } }
+
 h1, h2, h3 {
   padding-bottom: 20px; }
 
@@ -118,15 +199,13 @@ p {
   position: relative;
   z-index: 0;
   overflow: hidden;
-  height: 400px;
+  height: 100%;
   float: right;
   width: 50%;
   transition: 0.7s; }
 
-#home_info .info_img:hover {
-  transform: scale(1.1, 1.1); }
-
 #home_info .info_img img {
+  height: 100%;
   width: 100%; }
 
 #home_info .info_content {
