@@ -131,7 +131,7 @@ a{
 	}
 
 	.nav_icon{
-		outliene:none;
+		outline:none;
 		display: none;
 		float: right;
 		cursor: pointer;
@@ -188,7 +188,7 @@ a{
 			transition: 0.7s;
 			left: 0;
 		}	
-	}
+	} /* xsmall ul */
 
 	@include small{
 		ul{
@@ -214,9 +214,9 @@ a{
 			left: 0;
 		}	
 			
-	}
+	} /* xsmall ul */
 
-}
+}/* #navbar */
 
 
 #showcase{
@@ -244,7 +244,7 @@ a{
 			font-size: .8rem;
 		}
 	}
-}
+}/* #showcase */
 
 
 @include xsmall(){
@@ -275,11 +275,13 @@ a{
 			
 		}
 	}
-}
+}/* xsmall #showcase */
+
 
 @include small(){
 	#showcase{
 		height: 350px;
+		padding-top: 50px;	
 
 		.showcase_content{
 			padding-top: 40px;
@@ -301,7 +303,7 @@ a{
 			
 		}
 	}
-}
+}/* small #showcase */
 
 
 
@@ -471,12 +473,14 @@ p{
 
 #about_info{
 	line-height: 2.1rem;
-	margin-top: 60px;
+	margin-top: 160px;
 	min-height: 400px;
 	.info_left{
 		float: left;
 		width: 50%;
 	}
+
+
 	.info_right{
 		float: right;
 		width: 50%;
@@ -486,7 +490,7 @@ p{
 			display: block;
 			position: relative;
 			bottom: 25px;
-			left: 150px;
+			left: 35%;
 			height: 300px;
 			width: 300px;
 			border-radius: 50%;
@@ -494,18 +498,85 @@ p{
 
 	}
 
+	@include xsmall {
+		.info_left{
+			width: 100%;
+			float: none;
+			text-align: center;
+			margin-bottom: 80px;
+			h1, .text_primary{
+				font-size: 1.1rem;
+				top: 40px;
+			}
+			p{
+				font-size: .8rem;
+				position: relative;
+				top: 0;	
+			}
+		}
 
-}
+		.info_right{
+			width: 100%;
+			float: none;
+
+			img{
+				left: 0;
+				top: 0;
+				margin-top: 40px;
+				height: 170px;
+				width: 170px;
+				margin: 60px auto ;
+				}
+		}
+
+	}/* @include xsmall  */
+
+
+	@include small {
+		.info_left{
+			width: 100%;
+			float: none;
+			text-align: center;
+			margin-bottom: 80px;
+			h1, .text_primary{
+				font-size: 1.1rem;
+				top: 40px;
+			}
+			p{
+				font-size: .8rem;
+				position: relative;
+				bottom: 0;	
+			}
+		}
+		.info_right{
+			width: 100%;
+			float: none;
+
+			img{
+				left: 0;
+				top: 0;
+				margin-top: 40px;
+				height: 170px;
+				width: 170px;
+				margin: 60px auto ;
+			}
+		}
+	}
+
+}/* about_info */
+
+
 
 .l-heading{
 	color: #ffffff;
 	text-align: center;
 	font-size: 2rem;
+	margin-bottom: 40px;	
 	font-weight: 800;
 }
 
 #testimonials{
-	padding: 60px;
+	padding: 60px 0;
 	margin-bottom: 60px;
 	background: linear-gradient( to right bottom, rgba(128, 0, 128, 0.5), rgba(255, 166, 0, 0.5)),url(../img/hotel_lobby.jpg)  center center no-repeat;
 	background-size: cover;
@@ -523,18 +594,71 @@ p{
 			overflow: hidden;
 			border-radius: 50%;
 			float: left;
+			img{
+				width: 100%;
+				display: block;
+				margin-right: 5px;
+			}
+				
 		}
-		img{
-			width: 100%;
-			display: block;
-			margin-right: 5px;
-		}
+
 		p{
 			float: right;
 			width: 89%;
 		}
+		@include xsmall{
+			.img_container{
+				width: 100px;
+				height: 100px;
+				margin: 0 auto;
+				float: none;
+			}
+			p{
+				font-size: 0.8rem;
+			}
+
+		}
+		@include small{
+			.img_container{
+				width: 100px;
+				height: 100px;
+				margin: 0 auto;
+				float: none;
+			}
+			p{
+				font-size: 0.8rem;
+			}
+		}
+
+		@include medium{
+			p{
+				width: 80%;
+			}
+		}
+		@include large{
+			p{
+				width: 83%;
+			}
+		}
+	}/* .testimonial */
+
+	@include xsmall{
+	.container{
+		padding: 0;
 	}
+
+	.l-heading{
+		font-size: 1rem;
+	}
+
 }
+	@include small{
+		.l-heading{
+			font-size: 1.3rem;
+		}
+	}
+	
+}/* #testimonials */
 
 #contact_form{
 	margin: 60px 0;
@@ -572,20 +696,81 @@ p{
 			background: $primary-light-color;
 		}
 	}
-}
+}/* contact_form */
 
 
 #contact_info{
 	background: $primary-color;
 	padding: 50px;
+	color: #ffffff;
+
 	h3{
 		margin-bottom: -20px;
 	}
-	color: #ffffff;
+
 	.box{
 		width: 33.3%;
 		float: left;
 		text-align: center;
 	}
+
+
+}
+
+@include xsmall{
+
+	#contact_info{
+
+
+		.box{
+			height: 200px;
+			width: 100%;
+			padding:  20px 0;	
+			text-align: center;
+			float: none;
+		}
+	
+		h3{
+			margin-bottom: 5px;
+		}
+	}
+
+}
+
+
+@include small{
+
+	#contact_info{
+
+		.box{
+			height: 200px;
+			width: 100%;
+			padding:  20px 0;	
+			text-align: center;
+			float: none;
+		}
+	
+		h3{
+			margin-bottom: 5px;
+		}
+	}
+
+}
+
+
+
+@include xsmall{
+	#contact_info{
+		margin: 0;
+		width: 100%;
+
+		.container{
+			width: 100%;
+			padding: 0;
+		}
+
+	}
+
+
 }
 

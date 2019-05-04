@@ -2,7 +2,7 @@
 $page = 'contact';
 include('inc/header.php')?>
 
-<section id="contact_form">
+<section id="contact_form" class="clearfix">
     <div class="container">
         <h3 class="l-heading">
             <span class="text_primary">Contact </span>Us
@@ -40,7 +40,7 @@ include('inc/header.php')?>
         <div class="box">
             <i class="fas fa-envelope fa-3x"></i>
             <h3>Email Address</h3>
-            <p>dsrdan.radojci@myvaultsophia.com</p>
+            <p>revelhotelresort@gmailc.om</p>
         </div>
     </div>
 </section>

@@ -4,13 +4,13 @@ include('inc/header.php')?>
 
 <section id="about_info" class="clearfix">
     <div class="container">
+        <div class="info_right">
+            <img src="img/hotel-1623064_960_720.jpg" alt="">
+        </div>
         <div class="info_left">
             <h1><span class="text_primary">About</span> Revel Hotel & Resort</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt commodi laboriosam nemo quidem excepturi, voluptas fugit dignissimos non, numquam veritatis asperiores quasi deleniti hic sed recusandae temporibus nihil tenetur?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit veniam dicta incidunt praesentium, tenetur molestiae id temporibus error tempora.</p>
-        </div>
-        <div class="info_right">
-            <img src="img/hotel-1623064_960_720.jpg" alt="">
         </div>
     </div>
 

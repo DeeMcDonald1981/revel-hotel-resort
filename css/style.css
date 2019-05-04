@@ -83,7 +83,9 @@ a {
   color: #333333; }
 
 #navbar {
-  background: #9055A2; }
+  background: #9055A2;
+  /* xsmall ul */
+  /* xsmall ul */ }
 
 #navbar a {
   color: #ffffff; }
@@ -101,7 +103,7 @@ a {
     font-size: 1rem; } }
 
 #navbar .nav_icon {
-  outliene: none;
+  outline: none;
   display: none;
   float: right;
   cursor: pointer; }
@@ -167,6 +169,7 @@ a {
   #navbar .side_nav {
     left: 0; } }
 
+/* #navbar */
 #showcase {
   background: linear-gradient(to right bottom, rgba(212, 153, 185, 0.8), rgba(253, 214, 146, 0.8)), url(../img/the-palm-962785_960_720.jpg) center center no-repeat;
   background-size: cover;
@@ -190,6 +193,7 @@ a {
   padding: 18px 12px;
   font-size: .8rem; }
 
+/* #showcase */
 @media screen and (max-width: 420px) {
   #showcase {
     height: 350px; }
@@ -208,9 +212,11 @@ a {
     position: relative;
     top: 0px; } }
 
+/* xsmall #showcase */
 @media screen and (min-width: 420px) and (max-width: 768px) {
   #showcase {
-    height: 350px; }
+    height: 350px;
+    padding-top: 50px; }
   #showcase .showcase_content {
     padding-top: 40px; }
   #showcase .showcase_content h1 {
@@ -223,6 +229,7 @@ a {
     position: relative;
     top: 0px; } }
 
+/* small #showcase */
 h1, h2, h3 {
   padding-bottom: 20px; }
 
@@ -337,8 +344,9 @@ p {
 
 #about_info {
   line-height: 2.1rem;
-  margin-top: 60px;
-  min-height: 400px; }
+  margin-top: 160px;
+  min-height: 400px;
+  /* @include xsmall  */ }
 
 #about_info .info_left {
   float: left;
@@ -352,22 +360,73 @@ p {
   display: block;
   position: relative;
   bottom: 25px;
-  left: 150px;
+  left: 35%;
   height: 300px;
   width: 300px;
   border-radius: 50%; }
 
+@media screen and (max-width: 420px) {
+  #about_info .info_left {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 80px; }
+  #about_info .info_left h1, #about_info .info_left .text_primary {
+    font-size: 1.1rem;
+    top: 40px; }
+  #about_info .info_left p {
+    font-size: .8rem;
+    position: relative;
+    top: 0; }
+  #about_info .info_right {
+    width: 100%;
+    float: none; }
+  #about_info .info_right img {
+    left: 0;
+    top: 0;
+    margin-top: 40px;
+    height: 170px;
+    width: 170px;
+    margin: 60px auto; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #about_info .info_left {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 80px; }
+  #about_info .info_left h1, #about_info .info_left .text_primary {
+    font-size: 1.1rem;
+    top: 40px; }
+  #about_info .info_left p {
+    font-size: .8rem;
+    position: relative;
+    bottom: 0; }
+  #about_info .info_right {
+    width: 100%;
+    float: none; }
+  #about_info .info_right img {
+    left: 0;
+    top: 0;
+    margin-top: 40px;
+    height: 170px;
+    width: 170px;
+    margin: 60px auto; } }
+
+/* about_info */
 .l-heading {
   color: #ffffff;
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 40px;
   font-weight: 800; }
 
 #testimonials {
-  padding: 60px;
+  padding: 60px 0;
   margin-bottom: 60px;
   background: linear-gradient(to right bottom, rgba(128, 0, 128, 0.5), rgba(255, 166, 0, 0.5)), url(../img/hotel_lobby.jpg) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  /* .testimonial */ }
 
 #testimonials .testimonial {
   padding: 20px;
@@ -384,7 +443,7 @@ p {
   border-radius: 50%;
   float: left; }
 
-#testimonials .testimonial img {
+#testimonials .testimonial .img_container img {
   width: 100%;
   display: block;
   margin-right: 5px; }
@@ -393,6 +452,43 @@ p {
   float: right;
   width: 89%; }
 
+@media screen and (max-width: 420px) {
+  #testimonials .testimonial .img_container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: none; }
+  #testimonials .testimonial p {
+    font-size: 0.8rem; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #testimonials .testimonial .img_container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: none; }
+  #testimonials .testimonial p {
+    font-size: 0.8rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #testimonials .testimonial p {
+    width: 80%; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #testimonials .testimonial p {
+    width: 83%; } }
+
+@media screen and (max-width: 420px) {
+  #testimonials .container {
+    padding: 0; }
+  #testimonials .l-heading {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #testimonials .l-heading {
+    font-size: 1.3rem; } }
+
+/* #testimonials */
 #contact_form {
   margin: 60px 0; }
 
@@ -424,6 +520,7 @@ p {
 #contact_form [type="submit"]:hover {
   background: #ae7fbc; }
 
+/* contact_form */
 #contact_info {
   background: #9055A2;
   padding: 50px;
@@ -436,3 +533,31 @@ p {
   width: 33.3%;
   float: left;
   text-align: center; }
+
+@media screen and (max-width: 420px) {
+  #contact_info .box {
+    height: 200px;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    float: none; }
+  #contact_info h3 {
+    margin-bottom: 5px; } }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  #contact_info .box {
+    height: 200px;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    float: none; }
+  #contact_info h3 {
+    margin-bottom: 5px; } }
+
+@media screen and (max-width: 420px) {
+  #contact_info {
+    margin: 0;
+    width: 100%; }
+  #contact_info .container {
+    width: 100%;
+    padding: 0; } }
